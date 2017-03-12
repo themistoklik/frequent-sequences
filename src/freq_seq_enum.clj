@@ -21,16 +21,15 @@
 
 
 (defn freq-seq
-  [sdb prefix prefix-support min-sup frequent-seqs]
+  [sdb prefix prefix-support min-sup]
   (if ((complement empty?) prefix) (swap! fs conj [prefix prefix-support]))
   (let [lf (locally-frequents sdb min-sup)]
     (if (empty? lf) nil
-                    (for [[item sup] lf] (freq-seq (project-sdb sdb (str prefix item)) (str prefix item) sup min-sup @fs)))))
+                    (for [[item sup] lf] (freq-seq (project-sdb sdb (str prefix item)) (str prefix item) sup min-sup)))))
 
 (defn mine-freq-seqs
   [sdb min-sup]
-  (freq-seq sdb "" 0 min-sup @fs))
+  (freq-seq sdb "" 0 min-sup))
 
-;;simple test for now. TDD coming!
-(mine-freq-seqs ["CAABC" "ABCB" "CABC" "ABBCA"] 2)
-(deref fs)
+
+
