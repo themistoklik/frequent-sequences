@@ -1,6 +1,6 @@
 # Frequent Sequence Enumeration
 
-A frequent sequences enumeration algorithm I implemented for fun (and lack of solutions in clojure) as described in :
+A frequent sequences enumeration algorithm I prototyped for fun (and lack of solutions in clojure) as described in :
 
 Frequent Closed Sequence Mining without Candidate Maintenance, J. Wang, J. Han,
 and C. Li, IEEE Trans. on Knowledge and Data Engineering 19(8):1042-1056, IEEE
@@ -36,6 +36,7 @@ yields
 
 ## TODO
 
-Loads. Among which
+Loads! Among which
  - No manual deref to get result.
  - Efficient closed sequence support.
+ - Some tests would be nice (when the army provides free time).
