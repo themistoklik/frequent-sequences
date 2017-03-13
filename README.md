@@ -37,6 +37,5 @@ yields
 ## TODO
 
 Loads! Among which
- - No manual deref to get result.
  - Efficient closed sequence support.
  - Some tests would be nice (when the army provides free time).
