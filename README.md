@@ -11,8 +11,7 @@ Press, Piscataway, NJ, USA 2007
 Import and call `mine-freq-seqs` with your sequence database (in string format) and the minimum support.
 
 ### Example
-`(mine-freq-seqs ["CAABC" "ABCB" "CABC" "ABBCA"] 2)
- (deref fs)`
+`(mine-freq-seqs ["CAABC" "ABCB" "CABC" "ABBCA"] 2)`
 
 yields
 `=>
